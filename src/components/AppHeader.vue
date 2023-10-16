@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import albaSimple from '../assets/alba-simple-logo.svg'
 import router from '../router'
 </script>
 
