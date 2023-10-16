@@ -3,8 +3,8 @@ import albaLogo from '../assets/alba-logo.svg'
 </script>
 
 <template>
-  <footer class="w-full bg-alba-dark-green px-5 py-20 text-alba-light-green">
-    <div class="mx-auto flex max-w-screen-xl flex-col gap-12 md:flex-row md:gap-36 lg:gap-52">
+  <footer class="w-full bg-alba-dark-green py-20 text-alba-light-green">
+    <div class="mx-auto flex max-w-screen-xl flex-col gap-12 px-5 md:flex-row md:gap-36 lg:gap-52">
       <img
         :src="albaLogo"
         class="self-start"
