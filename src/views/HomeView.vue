@@ -17,7 +17,7 @@ import router from '../router'
     <h1 class="pb-20 text-center text-3xl font-medium md:text-5xl">
       Vi tilbyr:
     </h1>
-    <div class="flex flex-col items-center justify-between gap-24 pb-24 md:flex-row md:gap-0">
+    <div class="flex flex-col items-center justify-between gap-24 pb-24 md:flex-row md:gap-6">
       <div class="w-full space-y-8 text-center md:w-[500px] md:space-y-12">
         <span class="rounded-full bg-alba-pink px-4 py-2 text-lg text-alba-red">Omsorg</span>
         <p class="text-xl md:text-2xl">
