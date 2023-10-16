@@ -5,6 +5,15 @@ export default {
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
   theme: {
+    ringColor: {
+      DEFAULT: '#4D9EC3',
+    },
+    ringWidth: {
+      DEFAULT: '3px',
+    },
+    ringOpacity: {
+      DEFAULT: '100',
+    },
     extend: {
       colors: {
         'alba-red': '#70002D',

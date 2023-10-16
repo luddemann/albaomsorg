@@ -1,34 +1,51 @@
 <script setup lang="ts">
 import albaSimple from '../assets/alba-simple-logo.svg'
+import albaLogo from '../assets/alba-logo.svg'
+import router from '../router'
 </script>
 
 <template>
-  <header class="mx-auto grid max-w-screen-xl grid-cols-3 items-center p-6">
-    <router-link
-      to="/"
-      class="w-fit"
+  <header class="mx-auto grid max-w-screen-xl grid-cols-2 items-center p-5 md:grid-cols-3">
+    <button
+      class="w-fit focus-visible:ring"
+      @click="router.push('/')"
     >
       <img
         :src="albaSimple"
+        class="hidden md:block"
         alt=""
       >
-    </router-link>
-    <p class="mx-auto text-3xl text-alba-orange">
+      <div class="text-2xl">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="139"
+          height="71"
+          viewBox="0 0 139 71"
+          class="text-sm text-alba-orange md:hidden"
+        >
+          <path
+            fill="currentColor"
+            d="M70.896 42.266h10.978l2.329 6.583h4.07l-9.78-26.645h-4.151L64.557 48.85h4l2.339-6.583Zm5.501-15.494 4.4 12.45h-8.82l4.42-12.45ZM94.922 21.448h-3.806v27.406h3.806V21.448ZM103.321 45.92c.432.66.965 1.244 1.599 1.751a7.259 7.259 0 0 0 2.228 1.198c.853.29 1.797.437 2.837.437 1.827 0 3.436-.432 4.837-1.295 1.395-.862 2.482-2.055 3.253-3.578.771-1.522 1.162-3.248 1.162-5.176 0-1.929-.386-3.65-1.162-5.157-.777-1.507-1.858-2.7-3.253-3.578-1.396-.873-3.01-1.314-4.837-1.314-1.599 0-2.949.335-4.055 1.01-1.106.675-1.974 1.492-2.609 2.456V21.448h-3.806v27.406h3.426l.38-2.934Zm.782-10.165c.497-1.015 1.193-1.807 2.091-2.38.898-.569 1.959-.858 3.177-.858 1.142 0 2.172.279 3.081.837.913.559 1.624 1.345 2.131 2.36.508 1.015.761 2.198.761 3.538 0 1.34-.253 2.552-.761 3.537a5.827 5.827 0 0 1-2.131 2.34c-.914.568-1.939.857-3.081.857-1.218 0-2.279-.284-3.177-.857-.904-.569-1.599-1.35-2.091-2.34-.492-.99-.741-2.167-.741-3.537s.249-2.487.741-3.502v.005ZM131.27 49.026a6.947 6.947 0 0 0 1.772-.781c.517-.33.974-.726 1.37-1.183.391-.457.716-.939.969-1.446l.305 3.238H139V36.978c0-1.599-.31-2.974-.934-4.132-.624-1.152-1.543-2.05-2.761-2.684-1.218-.635-2.73-.954-4.532-.954a10 10 0 0 0-3.883.76c-1.218.508-2.212 1.244-2.989 2.208-.776.965-1.238 2.132-1.39 3.502h3.806c.203-1.116.71-1.948 1.523-2.491.812-.544 1.786-.818 2.928-.818.99 0 1.807.193 2.456.569.65.375 1.137.939 1.467 1.675.33.736.492 1.664.492 2.78h-4.948c-1.726 0-3.197.244-4.415.721-1.218.483-2.157 1.173-2.817 2.076-.66.904-.99 1.974-.99 3.218 0 1.066.254 2.05.761 2.949.508.903 1.279 1.619 2.325 2.152 1.04.532 2.345.801 3.918.801.837 0 1.583-.096 2.248-.284h.005Zm-4.816-4.243c-.294-.456-.436-.99-.436-1.598 0-.61.152-1.147.456-1.62.305-.466.792-.832 1.467-1.085.67-.254 1.568-.381 2.685-.381h4.527v.076a7.456 7.456 0 0 1-.416 2.243 6.6 6.6 0 0 1-1.086 1.944 5.087 5.087 0 0 1-1.695 1.37c-.66.33-1.396.493-2.208.493-.761 0-1.426-.127-2-.38-.568-.255-1.005-.61-1.294-1.067v.005ZM28.848 70.759h-.092a2.54 2.54 0 0 1-2.43-2.254L21.32 23.711l-2.913 22.453a2.535 2.535 0 0 1-4.66 1.03l-4.963-7.866-4.573 6.81L0 43.308l4.578-6.811a5.056 5.056 0 0 1 4.283-2.243 5.058 5.058 0 0 1 4.218 2.365l1.208 1.913 4.71-36.318A2.54 2.54 0 0 1 21.514 0h.02c1.284.01 2.355.98 2.497 2.253l5.436 48.672 2.162-11.673a2.53 2.53 0 0 1 1.71-1.95 2.552 2.552 0 0 1 2.533.57l3.623 3.43 4.005-10.85 4.76 1.755-5.339 14.46a2.535 2.535 0 0 1-4.126.964l-3.025-2.868-4.43 23.91a2.534 2.534 0 0 1-2.492 2.076v.01Z"
+          />
+        </svg>
+      </div>
+    </button>
+    <p class="mx-auto hidden text-3xl text-alba-orange md:block">
       Alba Omsorg
     </p>
-    <div class="ml-auto flex items-center gap-10">
-      <router-link
-        to="/om-oss"
-        class="text-alba-orange"
+    <div class="ml-auto flex items-center gap-6">
+      <button
+        class="rounded-full border-2 border-transparent px-5 py-3 text-alba-orange transition-all hover:border-alba-orange focus-visible:ring"
+        @click="router.push('/om-oss')"
       >
         Om oss
-      </router-link>
-      <router-link
-        to="/kontakt"
-        class="rounded-full bg-alba-orange px-5 py-3 text-white"
+      </button>
+      <button
+        class="rounded-full bg-alba-orange px-5 py-3 text-white transition-all hover:bg-opacity-80 focus-visible:ring"
+        @click="router.push('/kontakt')"
       >
         Kontakt oss
-      </router-link>
+      </button>
     </div>
   </header>
 </template>
