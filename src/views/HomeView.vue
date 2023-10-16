@@ -18,20 +18,20 @@ import router from '../router'
       Vi tilbyr:
     </h1>
     <div class="flex flex-col items-center justify-between gap-24 pb-24 md:flex-row md:gap-6">
-      <div class="w-full space-y-8 text-center md:w-[500px] md:space-y-12">
+      <div class="w-full space-y-8 text-center sm:w-[450px] md:space-y-12">
         <span class="rounded-full bg-alba-pink px-4 py-2 text-lg text-alba-red">Omsorg</span>
         <p class="md:text-xl">
           Vi tilbyr helse- og omsorgstjenester av høy kvalitet med fokus på pasientens behov.
         </p>
       </div>
-      <div class="w-full space-y-8 text-center md:w-[500px] md:space-y-12">
+      <div class="w-full space-y-8 text-center sm:w-[450px] md:space-y-12">
         <span class="rounded-full bg-alba-yellow px-4 py-2 text-lg text-alba-orange">Palliativ pleie</span>
         <p class="md:text-xl">
           Vi er sykepleiere med spesialkompetanse innenfor kreft og palliasjon.
         </p>
       </div>
     </div>
-    <div class="mx-auto w-full space-y-8 text-center md:w-[500px] md:space-y-12">
+    <div class="mx-auto w-full space-y-8 text-center sm:w-[450px] md:space-y-12">
       <span class="rounded-full bg-alba-light-blue px-4 py-2 text-lg text-alba-blue">Behandling</span>
       <p class="md:text-xl">
         Vi utfører pleie, medisinhåndtering og ivaretakelse av pårørende.
