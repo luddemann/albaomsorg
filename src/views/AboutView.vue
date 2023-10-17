@@ -21,14 +21,14 @@ import router from '../router'
       class="aspect-video h-full w-full object-cover"
       alt="Bestemor klemmer barnebarn"
     >
-    <article class="flex flex-col items-center justify-center gap-6 bg-alba-light-blue px-5 py-24 text-alba-blue">
-      <p class="max-w-lg">
+    <article class="flex flex-col items-center justify-center gap-6 bg-alba-light-blue px-5 py-16 text-alba-blue md:py-24">
+      <p class="max-w-xl">
         Vi i Alba omsorg mener at alle som mottar helsetjenester skal føle seg vel ivaretatt og motta verdighetsbevarende omsorg, uansett hvor i systemet de befinner seg. Vi ønsker at vår erfaring innenfor lindrende behandling skal kunne tilbys alle pasienter som er i behov for det.
       </p>
-      <p class="max-w-lg">
+      <p class="max-w-xl">
         Maria har seks års erfaring som sykepleier innen kommunehelsetjenesten og har spesialutdannelse i palliasjon. Trude har vært sykepleier i 20 år og har med seg lang erfaring fra både sykehus, helsehus og hjemmetjenesten. De siste ti årene har hun primært jobbet i kreftomsorgen, og tok videreutdanning i palliasjon 2021.
       </p>
-      <p class="max-w-lg">
+      <p class="max-w-xl">
         For å få full nytte av sykepleiernes kompetanse har vi et nært og godt samarbeid med to gamle kjente, Tor Kristian og Theo, som har bakgrunn og utdannelse innen markedsføring og administrasjon.
       </p>
     </article>
