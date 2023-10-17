@@ -3,7 +3,7 @@ import router from '../router'
 </script>
 
 <template>
-  <header class="mx-auto flex max-w-screen-xl items-center justify-between p-5 md:grid md:grid-cols-3">
+  <header class="mx-auto flex w-full max-w-screen-xl items-center justify-between p-5 md:grid md:grid-cols-3">
     <button
       class="w-fit focus-visible:ring"
       @click="router.push('/')"

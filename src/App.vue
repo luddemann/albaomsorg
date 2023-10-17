@@ -14,7 +14,7 @@ import AppFooter from './components/AppFooter.vue'
       <main
         v-if="Component"
         :key="route.path"
-        class="h-full w-full"
+        class="w-full grow"
       >
         <component :is="Component" />
       </main>
