@@ -5,7 +5,7 @@ import router from '../router'
 </script>
 
 <template>
-  <section class="mx-auto bg-alba-yellow px-5 py-24 text-center text-alba-orange md:py-52">
+  <section class="mx-auto w-full bg-alba-yellow px-5 py-24 text-center text-alba-orange md:py-52">
     <h1 class="mx-auto mb-8 text-center text-4xl font-medium tracking-wider md:text-6xl">
       En sykepleiers visjon.
     </h1>

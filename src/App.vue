@@ -5,6 +5,24 @@ import AppFooter from './components/AppFooter.vue'
 
 <template>
   <AppHeader />
-  <router-view />
+  <router-view v-slot="{ Component, route }">
+    <transition
+      enterFromClass="opacity-0 scale-[.99]"
+      enterActiveClass="transition-all duration-700 ease-out"
+      leaveFromClass="opacity-0 scale-[.99]"
+    >
+      <main
+        v-if="Component"
+        :key="route.path"
+        class="h-full w-full"
+      >
+        <component :is="Component" />
+      </main>
+      <main
+        v-else
+        class="h-screen"
+      />
+    </transition>
+  </router-view>
   <AppFooter />
 </template>
