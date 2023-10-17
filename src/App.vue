@@ -20,7 +20,7 @@ import AppFooter from './components/AppFooter.vue'
       </main>
       <main
         v-else
-        class="h-screen"
+        class="min-h-screen"
       />
     </transition>
   </router-view>
