@@ -1,7 +1,7 @@
 <template>
   <section class="h-full bg-alba-yellow text-alba-orange">
     <div class="mx-auto grid h-full max-w-screen-xl grid-cols-1 content-center gap-6 px-5 py-32 md:grid-cols-2">
-      <h1 class="text-6xl">
+      <h1 class="text-4xl md:text-6xl">
         Kontakt oss
       </h1>
       <div class="space-y-6 text-lg">
