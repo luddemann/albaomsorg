@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Hug from '../assets/hug.png'
+import Team from '../assets/team.png'
 import Window from '../assets/window.png'
 import router from '../router'
 </script>
@@ -40,7 +40,7 @@ import router from '../router'
   </section>
   <section class="grid grid-cols-1 flex-col-reverse md:grid-cols-2">
     <img
-      :src="Hug"
+      :src="Team"
       class="aspect-square h-full w-full object-cover"
       alt="Bestemor klemmer barnebarn"
     >

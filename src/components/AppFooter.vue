@@ -13,7 +13,7 @@ import albaLogo from '../assets/alba-logo.svg'
       <div class="flex flex-col gap-6 font-light">
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
           <p>Organisasjonsnummer: <br> 931 776 932</p>
-          <p>Mobilnummer: <br> 452 95 565</p>
+          <p>Mobilnummer: <br> <a href="tel:+4745295565">452 95 565</a></p>
         </div>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
           <p>Adresse: <br> Sars Gate 68, 0564 Oslo</p>
