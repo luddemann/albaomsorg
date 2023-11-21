@@ -10,9 +10,11 @@ const emit = defineEmits<{ (event: 'close'): void }>()
 
 watchEffect(() => {
   if (props.open) {
-    document.body.style.overflowY = 'hidden'
+    document.body.style.position = 'fixed'
+    document.body.style.inset = '0'
   } else {
-    document.body.style.overflowY = ''
+    document.body.style.position = ''
+    document.body.style.inset = ''
   }
 })
 </script>
