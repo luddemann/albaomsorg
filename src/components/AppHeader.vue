@@ -1,9 +1,13 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import router from '../router'
+import Drawer from './Drawer.vue'
+
+const showDrawer = ref(false)
 </script>
 
 <template>
-  <header class="mx-auto flex w-full max-w-screen-xl items-center justify-between p-5 md:grid md:grid-cols-3">
+  <header class="mx-auto flex w-full max-w-screen-xl items-center justify-between p-5 md:grid md:grid-cols-2 xl:grid-cols-3">
     <button
       class="w-fit focus-visible:ring"
       @click="router.push('/')"
@@ -12,7 +16,7 @@ import router from '../router'
         xmlns="http://www.w3.org/2000/svg"
         width="35"
         height="51"
-        class="hidden text-alba-orange md:block"
+        class="hidden text-alba-orange xl:block"
       ><path
         fill="currentColor"
         d="M20.922 51h-.067a1.836 1.836 0 0 1-1.762-1.624l-3.628-32.288-2.113 16.186c-.101.765-.671 1.386-1.43 1.551a1.846 1.846 0 0 1-1.952-.811l-3.598-5.67-3.319 4.91-3.055-2.041 3.318-4.908a3.675 3.675 0 0 1 3.108-1.618 3.677 3.677 0 0 1 3.06 1.706l.875 1.377 3.42-26.177C13.899.68 14.679 0 15.604 0h.017c.931.008 1.71.707 1.812 1.626l3.944 35.085 1.569-8.416a1.844 1.844 0 0 1 3.077-.995l2.626 2.473 2.904-7.82 3.453 1.266-3.87 10.423a1.835 1.835 0 0 1-1.308 1.147 1.85 1.85 0 0 1-1.684-.453l-2.193-2.065-3.212 17.234a1.838 1.838 0 0 1-1.808 1.497L20.922 51Z"
@@ -21,24 +25,51 @@ import router from '../router'
         xmlns="http://www.w3.org/2000/svg"
         width="81"
         height="41"
-        class="text-alba-orange md:hidden"
+        class="text-alba-orange xl:hidden"
       ><path
         fill="currentColor"
         d="M41.313 24.49h6.397l1.358 3.815h2.372l-5.7-15.44h-2.419l-5.702 15.44h2.33l1.364-3.814Zm3.206-8.977 2.564 7.213h-5.14l2.576-7.213ZM55.314 12.428h-2.218v15.88h2.218v-15.88ZM60.209 26.608a4.241 4.241 0 0 0 2.23 1.709 5.143 5.143 0 0 0 1.653.252c1.065 0 2.002-.25 2.818-.75a5.096 5.096 0 0 0 1.896-2.073c.45-.882.677-1.882.677-3 0-1.117-.224-2.114-.677-2.987a5.23 5.23 0 0 0-1.896-2.073c-.813-.506-1.753-.762-2.818-.762-.932 0-1.718.194-2.363.585-.645.391-1.15.865-1.52 1.424v-6.505H57.99v15.88h1.996l.222-1.7Zm.455-5.89a3.34 3.34 0 0 1 1.219-1.38c.523-.329 1.141-.497 1.851-.497.666 0 1.266.162 1.795.486.533.323.947.779 1.242 1.367.296.588.444 1.273.444 2.05 0 .776-.148 1.479-.444 2.05a3.385 3.385 0 0 1-1.242 1.355c-.532.33-1.13.497-1.795.497-.71 0-1.328-.165-1.851-.497a3.309 3.309 0 0 1-1.219-1.355c-.287-.574-.432-1.256-.432-2.05 0-.794.145-1.441.432-2.03v.004ZM76.496 28.408a4.058 4.058 0 0 0 1.032-.453c.301-.191.568-.42.798-.685a4.13 4.13 0 0 0 .565-.839l.178 1.877h1.93v-6.882c0-.926-.18-1.723-.543-2.393a3.745 3.745 0 0 0-1.61-1.556c-.709-.368-1.59-.553-2.64-.553-.799 0-1.553.147-2.263.441-.71.294-1.29.72-1.742 1.28-.452.558-.721 1.234-.81 2.028h2.218c.119-.647.414-1.129.887-1.443.474-.315 1.041-.474 1.707-.474.577 0 1.053.112 1.431.33.379.217.663.543.855.97.192.426.287.964.287 1.611h-2.884c-1.005 0-1.863.141-2.573.418-.71.28-1.257.68-1.641 1.203-.385.523-.577 1.144-.577 1.864 0 .618.148 1.188.444 1.709.296.523.745.938 1.354 1.247.607.308 1.367.464 2.284.464.487 0 .922-.056 1.31-.164h.003Zm-2.807-2.459a1.663 1.663 0 0 1-.254-.926c0-.353.088-.665.266-.938.177-.27.461-.483.855-.63.39-.147.913-.22 1.564-.22h2.638v.044a4.29 4.29 0 0 1-.242 1.3 3.812 3.812 0 0 1-.633 1.126 2.956 2.956 0 0 1-.988.794 2.848 2.848 0 0 1-1.287.285c-.443 0-.83-.073-1.165-.22-.331-.147-.585-.353-.754-.618v.003ZM16.81 41h-.053a1.477 1.477 0 0 1-1.417-1.306L12.425 13.74l-1.697 13.01a1.481 1.481 0 0 1-2.715.597l-2.893-4.558-2.664 3.946L0 25.094l2.668-3.947a2.95 2.95 0 0 1 2.496-1.3 2.951 2.951 0 0 1 2.457 1.37l.704 1.11L11.07 1.281A1.478 1.478 0 0 1 12.537 0h.012a1.473 1.473 0 0 1 1.455 1.306l3.167 28.201 1.26-6.763a1.47 1.47 0 0 1 .997-1.13 1.494 1.494 0 0 1 1.476.33l2.111 1.988 2.334-6.287 2.774 1.017-3.111 8.378a1.474 1.474 0 0 1-1.05.924 1.487 1.487 0 0 1-1.355-.365l-1.763-1.662-2.582 13.854c-.13.7-.742 1.203-1.452 1.203V41Z"
       /></svg>
     </button>
-    <p class="mx-auto hidden text-3xl text-alba-orange md:block">
+    <p class="mx-auto hidden text-3xl text-alba-orange xl:block">
       Alba Omsorg
     </p>
-    <div class="ml-auto flex items-center gap-2">
+    <div class="md:hidden">
       <button
-        class="rounded-full border-2 border-transparent px-5 py-3 text-sm text-alba-orange transition-all hover:border-alba-orange focus-visible:ring md:text-base"
-        @click="router.push('/om-oss')"
+        class="flex items-center text-alba-orange"
+        @click="showDrawer = true"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill="currentColor"
+            d="M2 4.286c0-.473.384-.857.857-.857h14.286a.856.856 0 1 1 0 1.714H2.857A.856.856 0 0 1 2 4.286ZM2 10c0-.475.384-.857.857-.857h14.286c.475 0 .857.382.857.857a.855.855 0 0 1-.857.857H2.857A.856.856 0 0 1 2 10Zm15.143 6.571H2.857a.856.856 0 1 1 0-1.714h14.286c.475 0 .857.382.857.857a.855.855 0 0 1-.857.857Z"
+          />
+        </svg>
+      </button>
+      <Drawer
+        :open="showDrawer"
+        @close="showDrawer = false"
+      />
+    </div>
+    <div class="ml-auto hidden items-center gap-6 md:flex">
+      <RouterLink
+        class="hover:underline focus-visible:ring md:text-base"
+        to="/om-oss"
       >
         Om oss
-      </button>
+      </RouterLink>
+      <RouterLink
+        class="hover:underline focus-visible:ring md:text-base"
+        to="/tjenester"
+      >
+        Våre tjenester
+      </RouterLink>
       <button
-        class="rounded-full bg-alba-orange px-5 py-3 text-sm text-white transition-all hover:bg-opacity-80 focus-visible:ring md:text-base"
+        class="rounded-full bg-alba-dark-green px-5 py-3 text-sm text-white transition-all hover:opacity-80 focus-visible:ring md:text-base"
         @click="router.push('/kontakt')"
       >
         Kontakt oss
