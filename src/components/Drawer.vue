@@ -1,16 +1,25 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
+import { watchEffect } from "vue";
 
-defineProps<{ open: boolean }>()
+const props = defineProps<{ open: boolean }>()
 
 const route = useRoute()
 
 const emit = defineEmits<{ (event: 'close'): void }>()
+
+watchEffect(() => {
+  if (props.open) {
+    document.body.style.overflowY = 'hidden'
+  } else {
+    document.body.style.overflowY = ''
+  }
+})
 </script>
 
 <template>
   <div
-    class="fixed left-0 top-0 overscroll-contain flex h-screen w-full animate-fade-in-left flex-col items-center gap-20 overflow-hidden bg-alba-yellow pt-32 text-alba-orange"
+    class="fixed left-0 top-0 overflow-y-hidden flex h-screen w-full animate-fade-in-left flex-col items-center gap-20 overflow-hidden bg-alba-yellow pt-32 text-alba-orange"
     :class="{'hidden': !open}"
   >
     <button class="absolute top-6 right-5 focus-visible:ring" @click="emit('close')">
