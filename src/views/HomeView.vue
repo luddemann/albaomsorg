@@ -11,7 +11,7 @@ import router from '../router'
     </h1>
     <p class="mx-auto max-w-[685px] md:text-xl">
       Vårt mål er å imøtekomme nåtidens og fremtidens utfordringer innenfor helse og omsorgstjenesten i Norge,
-      ved å bidra til en ny måte å strukturere dagens helse-tjenester med fokus på den enkeltes livs reise.
+      ved å bidra til en ny måte å strukturere dagens helsetjenester med fokus på den enkeltes livsreise.
     </p>
   </section>
   <section class="mx-auto flex max-w-screen-xl flex-col px-5 py-20 md:py-32">
