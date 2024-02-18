@@ -21,7 +21,7 @@ import router from '../router'
       class="aspect-video h-full w-full object-cover"
       alt="Bestemor klemmer barnebarn"
     >
-    <article class="flex flex-col items-center justify-center gap-6 bg-alba-light-blue px-5 py-16 text-alba-blue md:py-24">
+    <article class="flex flex-col items-center justify-center gap-6 bg-alba-light-blue px-5 py-16 text-alba-dark-green md:py-24">
       <p class="max-w-xl">
         Vi i Alba omsorg mener at alle som mottar helsetjenester skal føle seg vel ivaretatt og motta verdighetsbevarende omsorg, uansett hvor i systemet de befinner seg. Vi ønsker at vår erfaring innenfor lindrende behandling skal kunne tilbys alle pasienter som er i behov for det.
       </p>

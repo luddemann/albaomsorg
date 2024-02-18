@@ -20,6 +20,12 @@ import router from '../router'
         </p>
         <p>Mange ønsker å tilbringe sin siste tid hjemme i kjente og trygge omgivelser. Vi vil bidra til en tilrettelagt tjeneste slik at de som ønsker kan ha livets sluttfase i eget hjem.</p>
       </div>
+      <div class="text-center">
+        <span class="rounded-full bg-alba-blue px-6 py-2 text-lg text-alba-light-blue">Støttesamtaler</span>
+        <p class="mb-4 mt-10">
+          Noen ganger har man behov for å prate med noen om den situasjonen man står i. Mange opplever å måtte vente lenge på helsepsykolog eller psykolog. Vi har erfaring med å møte pasient og pårørende i vanskelige tider og kan være en støttende part i en utfordrende hverdag. Vi kan også tilby samtale med psykiatrisk sykepleier
+        </p>
+      </div>
       <div class="space-y-10 text-center">
         <span class="rounded-full bg-alba-light-green px-6 py-2 text-lg text-alba-dark-green">Følgetjenester</span>
         <p>

@@ -17,7 +17,7 @@ import albaLogo from '../assets/alba-logo.svg'
         </div>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
           <p>Adresse: <br> Sars Gate 68, 0564 Oslo</p>
-          <p>E-post: <br> alba.omsorg@gmail.com</p>
+          <p>E-post: <br> kontakt@albaomsorg.no</p>
         </div>
       </div>
     </div>
