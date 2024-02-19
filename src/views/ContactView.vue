@@ -12,7 +12,7 @@ import Trude from '../assets/Trude.png'
       </h1>
       <div class="space-y-6 text-lg">
         <p>Adresse: <br> Sars Gate 68, 0564 Oslo</p>
-        <p>Mobilnummer: <br> <a href="tel:+4745295565">452 95 565</a></p>
+        <p>Mobilnummer: <br> <a href="tel:+4722722818">22 72 28 18</a></p>
         <p>E-post: <br> kontakt@albaomsorg.no</p>
       </div>
     </div>
