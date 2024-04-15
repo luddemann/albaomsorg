@@ -41,6 +41,16 @@ import router from '../router'
         <span class="rounded-full bg-alba-pink px-6 py-2 text-lg text-alba-red">Sittevakter</span>
         <p>Vi tilbyr avlastning i form av sittevakter av ulik lengde ut ifra den enkeltes og pårørendes behov. Det vil bli foretatt en vurdering for å kartlegge hva vakten skal innebære.</p>
       </div>
+      <div class="space-y-10 text-center">
+        <span class="rounded-full bg-alba-red px-6 py-2 text-lg text-alba-pink">Besøksvenn</span>
+        <p>
+          <a
+            class="underline hover:bg-alba-yellow focus-visible:ring"
+            href="https://www.risvigomsorg.no/"
+            target="_blank"
+          >Risvig Omsorg</a> tilbyr besøkstjenester der du bor- hjemme eller på sykehjem. Vi legger vekt på gode matcher og relasjoner, og DIN besøksvenn kommer på faste dager og tider, og alltid med bil.
+        </p>
+      </div>
     </div>
   </section>
   <article class="flex flex-col items-center justify-center gap-8 bg-alba-yellow px-5 py-20 text-center text-alba-orange md:py-32">

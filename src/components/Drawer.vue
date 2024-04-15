@@ -53,6 +53,13 @@ watchEffect(() => {
     </RouterLink>
     <RouterLink
       class="text-4xl hover:underline focus-visible:ring"
+      to="/partnere"
+      @click="emit('close')"
+    >
+      Partnere
+    </RouterLink>
+    <RouterLink
+      class="text-4xl hover:underline focus-visible:ring"
       to="/kontakt"
       @click="emit('close')"
     >

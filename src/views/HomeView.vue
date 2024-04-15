@@ -24,6 +24,7 @@ import router from '../router'
       <span class="rounded-full bg-alba-yellow px-6 py-2 text-lg text-alba-orange">Palliativ pleie og omsorg</span>
       <span class="rounded-full bg-alba-light-green px-6 py-2 text-lg text-alba-dark-green">Følgetjenester</span>
       <span class="rounded-full bg-alba-blue px-6 py-2 text-lg text-alba-light-blue">Støttesamtaler</span>
+      <span class="rounded-full bg-alba-red px-6 py-2 text-lg text-alba-pink">Besøksvenn</span>
     </div>
     <RouterLink
       class="mx-auto block underline hover:bg-alba-yellow focus-visible:ring"
