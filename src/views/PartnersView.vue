@@ -21,6 +21,7 @@
       <a
         class="rounded-full bg-alba-orange px-5 py-3 text-alba-yellow transition-all hover:opacity-80 focus-visible:ring"
         href="https://www.risvigomsorg.no/"
+        target="_blank"
       >
         Les mer om Risvig Omsorg
       </a>
