@@ -7,21 +7,18 @@ import AppFooter from './components/AppFooter.vue'
   <AppHeader />
   <router-view v-slot="{ Component, route }">
     <transition
-      enterFromClass="opacity-0 scale-[.99]"
-      enterActiveClass="transition-all duration-700 ease-out"
-      leaveFromClass="opacity-0 scale-[.99]"
+      enterFromClass="opacity-0"
+      enterActiveClass="transition-all duration-700 delay-100 ease-out"
+      enterToClass="opacity-100"
+      leaveFromClass="opacity-100"
+      leaveToClass="opacity-0"
     >
       <main
-        v-if="Component"
         :key="route.path"
         class="w-full grow"
       >
         <component :is="Component" />
       </main>
-      <main
-        v-else
-        class="min-h-screen"
-      />
     </transition>
   </router-view>
   <AppFooter />
