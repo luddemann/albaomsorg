@@ -5,7 +5,7 @@ import router from '../router'
 </script>
 
 <template>
-  <section class="mx-auto w-full bg-alba-yellow px-5 py-24 text-center text-alba-orange md:py-52">
+  <section class="mx-auto hidden w-full bg-alba-yellow px-5 py-24 text-center text-alba-orange md:py-52">
     <h1 class="mx-auto mb-8 max-w-[750px] text-center text-4xl font-medium !leading-tight tracking-wider md:text-6xl">
       Hjemmesykepleie - profesjonelt og personlig
     </h1>
@@ -14,17 +14,42 @@ import router from '../router'
       Vi ønsker å jobbe for at du kan være hjemme så lenge som mulig, uavhengig av diagnose og alder.
     </p>
   </section>
+  <section class="flex flex-col justify-center bg-alba-yellow py-16 text-alba-orange md:h-[calc(100vh-16rem)]">
+    <section class="mx-auto grid max-w-screen-xl grid-cols-1 items-center gap-7 px-5 md:grid-cols-2">
+      <div class="space-y-8 text-center md:text-left">
+        <h1 class="text-4xl font-medium !leading-tight tracking-wider md:text-5xl">
+          Hjemmesykepleie - profesjonelt og personlig
+        </h1>
+        <p class="md:text-lg">
+          Alba er en tjeneste for deg som bor hjemme og som har behov for noe mer enn det som kan tilbys i dag.
+          Vi ønsker å jobbe for at du kan være hjemme så lenge som mulig, uavhengig av diagnose og alder.
+        </p>
+      </div>
+      <div class="mx-auto grid w-5/6 grid-cols-5 items-center gap-4 md:w-full">
+        <img
+          src="../../src/assets/Trudo.png"
+          class="col-span-3"
+          alt=""
+        >
+        <img
+          src="../../src/assets/beggo.png"
+          class="col-span-2"
+          alt=""
+        >
+      </div>
+    </section>
+  </section>
   <section class="mx-auto flex max-w-screen-xl flex-col px-5 py-20 md:py-32">
     <h1 class="pb-20 text-center text-3xl font-medium md:text-5xl">
       Våre tjenester
     </h1>
     <div class="mx-auto mb-12 flex max-w-xl flex-wrap justify-center gap-6">
-      <span class="rounded-full bg-alba-pink px-6 py-2 text-lg text-alba-red">Sittevakter</span>
-      <span class="rounded-full bg-alba-light-blue px-6 py-2 text-lg text-alba-blue">Hjemmebaserte omsorgstjenester</span>
-      <span class="rounded-full bg-alba-yellow px-6 py-2 text-lg text-alba-orange">Palliativ pleie og omsorg</span>
-      <span class="rounded-full bg-alba-light-green px-6 py-2 text-lg text-alba-dark-green">Følgetjenester</span>
-      <span class="rounded-full bg-alba-blue px-6 py-2 text-lg text-alba-light-blue">Støttesamtaler</span>
-      <span class="rounded-full bg-alba-red px-6 py-2 text-lg text-alba-pink">Besøksvenn</span>
+      <span class="rounded-full bg-alba-orange px-6 py-2 text-lg text-alba-yellow">Sittevakter</span>
+      <span class="rounded-full bg-alba-orange px-6 py-2 text-lg text-alba-yellow">Hjemmebaserte omsorgstjenester</span>
+      <span class="rounded-full bg-alba-orange px-6 py-2 text-lg text-alba-yellow">Palliativ pleie og omsorg</span>
+      <span class="rounded-full bg-alba-orange px-6 py-2 text-lg text-alba-yellow">Følgetjenester</span>
+      <span class="rounded-full bg-alba-orange px-6 py-2 text-lg text-alba-yellow">Støttesamtaler</span>
+      <span class="rounded-full bg-alba-orange px-6 py-2 text-lg text-alba-yellow">Besøksvenn</span>
     </div>
     <RouterLink
       class="mx-auto block underline hover:bg-alba-yellow focus-visible:ring"
@@ -68,7 +93,7 @@ import router from '../router'
         <span>Har du det yrkesetiske verdigrunnlaget, er faglig sterk og ønsker nye utfordringer? Da vil vi høre fra deg!</span>
       </p>
       <button
-        class="rounded-full bg-alba-dark-green px-5 py-3 text-alba-light-green transition-all hover:bg-opacity-80 focus-visible:ring"
+        class="rounded-full bg-alba-dark-green px-5 py-3 text-alba-light-green transition-all hover:opacity-80 focus-visible:ring"
         @click="router.push('/kontakt')"
       >
         Kontakt oss
